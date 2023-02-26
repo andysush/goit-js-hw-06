@@ -10,13 +10,13 @@ function onformSubmit(event) {
 	const password = formElements.password.value;
 
 	if (mail === "" || password === "") {
-		alert("Всі поля форми мають бути заповнені!!!");
+		return alert("Всі поля форми мають бути заповнені!!!");
 	} else {
 		const dataArray = {
 			mail,
 			password,
 		};
 		console.log(dataArray);
+		event.currentTarget.reset();
 	}
-	event.currentTarget.reset();
 }
