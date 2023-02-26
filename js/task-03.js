@@ -16,7 +16,7 @@ const images = [
 const ulEl = document.querySelector(".gallery");
 
 let makeLiList = images.map(({ url, alt }) => {
-	return `<li><img src="${url}" alt="${alt}" width="300px" height="180px" class="gallery__img"></li>`;
+	return `<li><img src="${url}" alt="${alt}" width="460px" height="150px" class="gallery__img"></li>`;
 });
 
 ulEl.insertAdjacentHTML("afterbegin", makeLiList.join(""));
